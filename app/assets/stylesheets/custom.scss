@@ -1,0 +1,89 @@
+/* General */
+
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin: 40px;
+}
+
+a {
+  color: #333;
+
+  /*&:visited {
+    color: #666;
+  }*/
+
+  &:hover {
+    color: grey;
+  }
+}
+
+#container {
+  border: 1px solid #eaeaea;
+  border-radius: 9px;
+  padding: 5px 15px;
+  margin: 0 29%;
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.field input {
+  border: 1px solid #708090 ;
+  border-radius:4px;
+  padding: 5px;
+}
+
+.field textarea {
+  border: 1px solid #708090 ;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* header */
+
+header {
+  border: 1px solid #eaeaea;
+  border-radius: 7px;
+  color: #777;
+  margin-bottom: 50px;
+  font-size: 25px;
+  background-color: 
+}
+
+header ul {
+  list-style: none;
+  text-align: center;
+  li {
+    display: inline-block;
+    padding: 0 130px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+
+/* index */
+
+/* edit */
+
+#edit_container {
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px 15px;
+  margin: 0 24%;
+  text-align: left;
+  border-color: black;
+}
