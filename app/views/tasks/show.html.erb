@@ -1,8 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<div class="center"><p>
+<div class="center">
+<p>
   <strong>Title:</strong>
   <%= @task.title %>
+</p>
+<p>
+  <strong>Owner:</strong>
+  <%= @task.user.name %>
 </p>
 <p>
   <strong>Content:</strong>

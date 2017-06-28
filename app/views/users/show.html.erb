@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+<div class="center">
+  <div id="container">
+  	<p>
+  	  <strong>Name:</strong>
+  	  <%= @user.name %>
+  	</p>
+  	<p>
+  	  <strong>Email:</strong>
+  	  <%= @user.email %>
+  	</p>
+    <p>
+      <strong>Tasks number:</strong>
+      <%= @user.tasks.count() %>
+    </p>
+  </div>
+  <br>
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Back', users_path %>
+</div>

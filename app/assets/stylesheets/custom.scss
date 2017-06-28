@@ -3,7 +3,7 @@
 body {
   background-color: #fff;
   color: #333;
-  margin: 33px;
+  /*margin: 33px;*/
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -13,6 +13,10 @@ h1 {
   text-align: center;
   font-size: 3em;
   margin: 40px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 a {
@@ -59,15 +63,16 @@ header {
   color: #777;
   margin-bottom: 50px;
   font-size: 25px;
-  background-color: 
+  background-color: #e6ffe6;
 }
 
 header ul {
   list-style: none;
   text-align: center;
+  padding-left: 0;
   li {
     display: inline-block;
-    padding: 0 130px;
+    padding: 0 30px;
 
     a {
       text-decoration: none;
@@ -77,6 +82,8 @@ header ul {
 
 
 /* index */
+
+
 
 /* edit */
 
