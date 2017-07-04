@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+<div class="center">
+  <div id="container">
+  	<p>
+  	  <strong>Name:</strong>
+  	  <%= @user.name %>
+  	</p>
+  	<p>
+  	  <strong>Email:</strong>
+  	  <%= @user.email %>
+  	</p>
+    <p>
+      <strong>Tasks number:</strong>
+      <%@user.tasks.each do |task| %>
+    <div>
+    <h2 class="center"><%= task.title %></h2>
+    <div id="container">
+      <%= simple_format(truncate(task.content, :length => 60)) %>
+    </div>
+    <p class="center"><%= link_to 'Show', task %> |
+    <%= link_to 'Edit', edit_task_path(task) %> |
+    <%= link_to 'Delete', task, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    <br>
+  </div>
+<% end %>
+    </p>
+  </div>
+  <br>
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Back', users_path %>
+</div>

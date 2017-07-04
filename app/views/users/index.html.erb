@@ -1,4 +1,4 @@
-<h1>All users | <%= link_to 'New User', new_user_path %></h1>
+<h1>All users | <%= link_to 'New User', new_user_registration_path %></h1>
 <p id="notice"><%= notice %></p>
 <% @users.each do |user| %>
   <div id="container">
@@ -7,6 +7,10 @@
     </p>
     <p>
       <strong>Name:</strong> <%= user.email %>
+    </p>
+    <p>
+      <strong>Tasks number:</strong>
+      <%= user.tasks.count() %>
     </p>
   </div>
   <p class="center">
