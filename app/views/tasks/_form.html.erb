@@ -12,11 +12,11 @@
   <% end %>
   <div id="edit_container">
     <div class="center">
-      <div class="field">
+      <div class="field2">
         <strong><%= form.label :title %></strong>
-        <%= form.text_field :title, id: :task_title %>
+        <%= form.text_field :title, id: :task_title, :autocomplete => :off %>
       </div>
-      
+      <br>
       <div class="field">
         <strong><%= form.label :content %></strong>
         <%= form.text_area :content, size: "50x10", id: :task_content %>

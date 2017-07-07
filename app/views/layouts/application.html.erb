@@ -9,18 +9,14 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <p>
-      <%= link_to "Sign Up", new_user_registration_path %>
-      <%= link_to "Sign In", new_user_session_path %>
-      <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>      
-    </p>
-    <%= render 'tasks/header' %>
-    <div class="container">
-      <%= yield %>
+    <div class="bg">
+      <%= render 'layouts/header' %>
+      <div class="container">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+        <%= yield %>
+        <%#= debug(params) if Rails.env.development? %>
+      </div>
     </div>
-    <%#= debug(params) if Rails.env.development? %>
   </body>
 </html>

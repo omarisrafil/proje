@@ -1,8 +1,9 @@
-<h1>Editing Task</h1>
-
-<%= render 'form', task: @task %>
-<br>
-<div class="center">
-  <%= link_to 'Show', @task %> |
-  <%= link_to 'Back', tasks_path %>
+<div class="wrapper">
+  <h1>Editing Task</h1>
+  <%= render 'form', task: @task %>
+  <br>
+  <div class="center">
+  	<%= link_to 'Show', @task %> |
+  	<%= link_to 'Back', tasks_path %>
+  </div>
 </div>

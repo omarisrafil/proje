@@ -1,18 +1,28 @@
-<h1>All tasks | <%= link_to 'New Task', new_task_path %></h1>
-<p id="notice"><%= notice %></p>
-<% @tasks.each do |task| 
-    if task.user == current_user %>
+<div class="wrapper">
+  <p id="notice"><%= notice %></p>
+  <h1>All tasks | <%= link_to 'New Task', new_task_path %></h1>
+  <br>
+  <% nopost = true %>
+  <% @tasks.each do |task| %>
+    <% if task.user == current_user %>
+      <% nopost = false %>
       <div>
         <h2 class="center"><%= task.title %></h2>
         <div id="container">
           <%= simple_format(truncate(task.content, :length => 60)) %>
         </div>
-      <p class="center"><%= link_to 'Show', task %> |
+      <p class="center">
+        <%= link_to 'Show', task %> |
         <%= link_to 'Edit', edit_task_path(task) %> |
         <%= link_to 'Delete', task, method: :delete, data: { confirm: 'Are you sure?' } %>
       </p>
-    <br>
-  </div>
-<% end
-end %>
-  
+      <br>
+      </div>
+    <% end %>
+  <% end %>
+  <% if nopost %>
+      <div id="container">
+          <p class="center">No task found</p>
+        </div>
+    <% end %>  
+</div>
