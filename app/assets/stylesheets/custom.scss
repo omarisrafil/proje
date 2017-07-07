@@ -90,6 +90,7 @@ a {
 }
 
 #op_container {
+  background-color: #eaeaea;
   border-top: 1px solid #708090;
   border-bottom: 1px solid #708090;
   margin-top: 25px;
@@ -102,6 +103,41 @@ a {
       display: inline-block;
       text-align: center;
       margin: 0 40px 0 5px;   
+    }
+  }
+}
+
+.table_container {
+  margin: 0 auto;
+  width: 70%;
+  overflow-x: auto;
+  table {
+   border: 1px solid #708090;
+    border-collapse: collapse;
+    width: 100%;
+    th {
+      text-align: center;
+      border: 1px solid #708090
+    }
+    th#title {
+      width: 20%;
+    }
+    th#content {
+      width: 60%;
+    }
+    th#op {
+      width: 20%;
+    }
+    tbody {
+      td {
+        border: 1px solid #708090;
+        padding-left: 15px;
+      }
+      td#op {
+        text-align:center;
+        padding: 0;
+      }   
+      
     }
   }
 }
